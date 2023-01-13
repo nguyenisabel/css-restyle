@@ -1,18 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fjalla+One&family=News+Cycle:wght@400;700&display=swap');
 
+*{
+  box-sizing: border-box;
+}
 body {
-background-color: #fef2c2;   
+background-color: #ebe8e7;   
 color:#302005;
+font-family: 'News Cycle', sans-serif;
+}
+
+header{
+  text-align: center;
+  border: 1.5px solid black;
 }
 
 h1{
   font-family: 'Abril Fatface', cursive;
 }
+h2{
+  font-family: 'Abril Fatface', cursive;
+}
+
+address{
+  padding: 10px;
+  float: left;
+  font-family: 'Fjalla One', sans-serif;
+  font-style: normal;
+}
+
+header p{
+  text-align: left;
+  border: 1.5px solid black;
+  padding: 10px;
+  margin-left: 175px;
+}
+
+nav{
+  /* font-family: 'Fjalla One', sans-serif; */
+}
 nav ul{
   list-style-type: none;
 }
+nav li{
+  display: inline;
+  padding: 5px;
+  border: 1.5px solid black;
+}
 nav a{
   text-decoration: none;
+  color: black;
 }
 
 
@@ -21,12 +57,13 @@ width: 512px;
 display: block;
 margin-left: auto;
 margin-right: auto;
+/* border: 4px solid #d9eadd; */
 }
 
 
 table {
 border:0.5px solid black;
-background-color: #eeffee;
+background-color: #d9eadd;
 margin-left: auto;
 margin-right: auto;
 }
@@ -41,3 +78,7 @@ figcaption {
     padding: 2px;
     text-align: center;
   }
+
+.clearfix{
+  clear: both;
+}
