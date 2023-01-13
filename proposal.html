@@ -22,90 +22,106 @@ including a nav at the top of the page, and I moved most of the styling to a sep
       March 1989, May 1990
     </address>
   </header>
-<div class="wrapper">
-  <nav>
-    <ul>
-      <h2>Article Contents</h2>
-      <li><a href="#overview">Overview</a></li>
-      <li><a href="#losingInfo">Losing Information at CERN</a></li>
-      <li><a href="#linkedInfo">Linked Information Systems</a></li>
-      <li><a href="#trees">The Problem with Trees</a></li>
-      <li><a href="#keyWords">The Problem with Keywords</a></li>
-      <li><a href="#hypertext">A Solution: Hypertext</a></li>
-      <li><a href="#requirements">CERN Requirements</a></li>
-      <li><a href="#accessingExistingData">Accessing Existing Data</a></li>
-      <li><a href="#conclusion">Conclusion</a></li>
-      <li><a href="#references">References</a></li>
-    </ul>
-  </nav>
-  <figure>
-    <img src="images/Image1.gif" alt="A circles and arrows diagram relating concepts discussed in the paper">
-  </figure>
-  <p>
-    This proposal concerns the management of general information about accelerators and experiments at CERN. It discusses the problems of loss of information about complex evolving systems and derives a solution based on a distributed hypertext system.
-  </p>
+  <div class="wrapper">
+    <nav>
+      <ul>
+        <h2>Article Contents</h2>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#losingInfo">Losing Information at CERN</a></li>
+        <li><a href="#linkedInfo">Linked Information Systems</a></li>
+        <li><a href="#trees">The Problem with Trees</a></li>
+        <li><a href="#keyWords">The Problem with Keywords</a></li>
+        <li><a href="#hypertext">A Solution: Hypertext</a></li>
+        <li><a href="#requirements">CERN Requirements</a></li>
+        <li><a href="#accessingExistingData">Accessing Existing Data</a></li>
+        <li><a href="#conclusion">Conclusion</a></li>
+        <li><a href="#references">References</a></li>
+      </ul>
+    </nav>
+    <figure>
+      <img src="images/Image1.gif" alt="A circles and arrows diagram relating concepts discussed in the paper">
+    </figure>
+    <p>
+      This proposal concerns the management of general information about accelerators and experiments at CERN. It
+      discusses the problems of loss of information about complex evolving systems and derives a solution based on a
+      distributed hypertext system.
+    </p>
 
-</div>
+  </div>
 
   <article>
 
 
     <h2 id="overview">Overview</h2>
 
-    <p id="edit1">Many of the discussions of the future at CERN and the LHC era end with the question - Yes, but how will we ever keep track of such a large project? This proposal provides an answer to such questions. Firstly, it discusses the problem of information access at CERN. Then, it introduces the idea of linked information systems, and compares them with less flexible ways of finding information.
+    <p id="edit1">Many of the discussions of the future at CERN and the LHC era end with the question - Yes, but how
+      will we ever keep track of such a large project? This proposal provides an answer to such questions. Firstly, it
+      discusses the problem of information access at CERN. Then, it introduces the idea of linked information systems,
+      and compares them with less flexible ways of finding information.
       <br><br>
       It then summarises my short experience with non-linear text systems known
       as hypertext, describes what CERN needs from such a system, and what
       industry may provide. Finally, it suggests steps we should take to involve
       ourselves with hypertext now, so that individually and collectively we may
-      understand what we are creating.</p>
+      understand what we are creating.
+    </p>
 
     <h2 id="losingInfo">Losing Information at CERN</h2>
 
-    <p id="edit2">CERN is a wonderful organisation. It involves several thousand people, many of them very creative, all working toward common goals. Although they are nominally organised into a hierarchical management structure,this does not constrain the way people will communicate, and share information, equipment and software across groups.
+    <p id="edit2">CERN is a wonderful organisation. It involves several thousand people, many of them very creative, all
+      working toward common goals. Although they are nominally organised into a hierarchical management structure,this
+      does not constrain the way people will communicate, and share information, equipment and software across groups.
       <br><br>
-    The actual observed working structure of the organisation is a multiply connected "web" whose interconnections evolve with time. In this environment, a new person arriving, or someone taking on a new task, is normally given a few hints as to who would be useful people to talk to. Information about what facilities exist and how to find out about them travels in the corridor gossip and occasional newsletters, and the details about what is required to be done spread in a similar way. All things considered, the result is remarkably successful, despite occasional misunderstandings and duplicated effort.
+      The actual observed working structure of the organisation is a multiply connected "web" whose interconnections
+      evolve with time. In this environment, a new person arriving, or someone taking on a new task, is normally given a
+      few hints as to who would be useful people to talk to. Information about what facilities exist and how to find out
+      about them travels in the corridor gossip and occasional newsletters, and the details about what is required to be
+      done spread in a similar way. All things considered, the result is remarkably successful, despite occasional
+      misunderstandings and duplicated effort.
       <br><br>
-  A problem, however, is the high turnover of people. When two years is a
+      A problem, however, is the high turnover of people. When two years is a
       typical length of stay, information is constantly being lost. The introduction
       of the new people demands a fair amount of their time and that of others
       before they have any idea of what goes on. The technical details of past
       projects are sometimes lost forever, or only recovered after a detective
       investigation in an emergency. Often, the information has been recorded, it
       just cannot be found.
-      </p>
-      <p id="edit3">
-      If a CERN experiment were a static once-only development, all the
-      information could be written in a big book. As it is, CERN is constantly
-      changing as new ideas are produced, as new technology becomes available, and
-      in order to get around unforeseen technical problems. When a change is
-      necessary, it normally affects only a small part of the organisation. A local
-      reason arises for changing a part of the experiment or detector. At this
-      point, one has to dig around to find out what other parts and people will be
-      affected. Keeping a book up to date becomes impractical, and the structure of
-      the book needs to be constantly revised.
+    </p>
+    <div id="edit3">
+      <p>
+        If a CERN experiment were a static once-only development, all the
+        information could be written in a big book. As it is, CERN is constantly
+        changing as new ideas are produced, as new technology becomes available, and
+        in order to get around unforeseen technical problems. When a change is
+        necessary, it normally affects only a small part of the organisation. A local
+        reason arises for changing a part of the experiment or detector. At this
+        point, one has to dig around to find out what other parts and people will be
+        affected. Keeping a book up to date becomes impractical, and the structure of
+        the book needs to be constantly revised.
         <br><br>
-    The sort of information we are discussing answers, for example, questions like</p>
+        The sort of information we are discussing answers, for example, questions like
+      </p>
+      <ul>
+        <li>Where is this module used?</li>
+        <li>Who wrote this code? Where does he work?</li>
+        <li>What documents exist about that concept?</li>
+        <li>Which laboratories are included in that project?</li>
+        <li>Which systems depend on this device?</li>
+        <li>What documents refer to this one?</li>
+      </ul>
 
-    <ul id="edit3">
-      <li>Where is this module used?</li>
-      <li>Who wrote this code? Where does he work?</li>
-      <li>What documents exist about that concept?</li>
-      <li>Which laboratories are included in that project?</li>
-      <li>Which systems depend on this device?</li>
-      <li>What documents refer to this one?</li>
-    </ul>
-
-    <p id="edit3">The problems of information loss may be particularly acute at CERN, but in
-      this case (as in certain others), CERN is a model in miniature of the rest of
-      world in a few years time. CERN meets now some problems which the rest of the
-      world will have to face soon. In 10 years, there may be many commercial
-      solutions to the problems above, while today we need something to allow us to
-      continue.</p>
+      <p>The problems of information loss may be particularly acute at CERN, but in
+        this case (as in certain others), CERN is a model in miniature of the rest of
+        world in a few years time. CERN meets now some problems which the rest of the
+        world will have to face soon. In 10 years, there may be many commercial
+        solutions to the problems above, while today we need something to allow us to
+        continue.</p>
+    </div>
 
     <h2 id="linkedInfo">Linked Information Systems</h2>
 
-    <p>In providing a system for manipulating this sort of information, the hope
+    <p id="edit4">
+      In providing a system for manipulating this sort of information, the hope
       would be to allow a pool of information to develop which could grow and evolve
       with the organisation and the projects it describes. For this to be possible,
       the method of storage must not place its own restraints on the information.
@@ -114,107 +130,114 @@ including a nav at the top of the page, and I moved most of the styling to a sep
       system, many people resort to diagrams with circles and arrows. Circles and
       arrows leave one free to describe the interrelationships between things in a
       way that tables, for example, do not. The system we need is like a diagram of
-      circles and arrows, where circles and arrows can stand for anything.</p>
+      circles and arrows, where circles and arrows can stand for anything.
+    </p>
+    <div id="edit5">
+      <p>
+        We can call the circles nodes, and the arrows links. Suppose each node is
+        like a small note, summary article, or comment. I'm not over concerned here
+        with whether it has text or graphics or both. Ideally, it represents or
+        describes one particular person or object. Examples of nodes can be
+      </p>
 
-    <p>We can call the circles nodes, and the arrows links. Suppose each node is
-      like a small note, summary article, or comment. I'm not over concerned here
-      with whether it has text or graphics or both. Ideally, it represents or
-      describes one particular person or object. Examples of nodes can be</p>
+      <ul>
+        <li>People</li>
+        <li>Software modules</li>
+        <li>Groups of people</li>
+        <li>Projects</li>
+        <li>Concepts</li>
+        <li>Documents</li>
+        <li>Types of hardware</li>
+        <li>Specific hardware objects</li>
+      </ul>
+    </div>
+    <div id="edit6">
+      <p>The arrows which links circle A to circle B can mean, for example, that A...</p>
 
-    <ul>
-      <li>People</li>
-      <li>Software modules</li>
-      <li>Groups of people</li>
-      <li>Projects</li>
-      <li>Concepts</li>
-      <li>Documents</li>
-      <li>Types of hardware</li>
-      <li>Specific hardware objects</li>
-    </ul>
-
-    <p>The arrows which links circle A to circle B can mean, for example, that A...</p>
-
-    <ul>
-      <li>depends on B</li>
-      <li>is part of B</li>
-      <li>made B</li>
-      <li>refers to B</li>
-      <li>uses B</li>
-      <li>is an example of B</li>
-    </ul>
-
-    <p>These circles and arrows, nodes and links, have different significance in
-      various sorts of conventional diagrams:</p>
+      <ul>
+        <li>depends on B</li>
+        <li>is part of B</li>
+        <li>made B</li>
+        <li>refers to B</li>
+        <li>uses B</li>
+        <li>is an example of B</li>
+      </ul>
+    </div>
+    <div id="edit7">
+      <p>These circles and arrows, nodes and links, have different significance in
+        various sorts of conventional diagrams:</p>
 
 
-    <table cellspacing="0" cellpadding="5">
-      <tbody>
-        <tr>
-          <th>Diagram</th>
-          <th>Nodes are</th>
-          <th>Arrows mean</th>
-        </tr>
-        <tr>
-          <td>Family tree</td>
-          <td>People</td>
-          <td>"Is parent of"</td>
-        </tr>
-        <tr>
-          <td>Dataflow diagram</td>
-          <td>Software modules"</td>
-          <td>Passes data to"</td>
-        </tr>
-        <tr>
-          <td>Dependency</td>
-          <td>Module</td>
-          <td>"Depends on"</td>
-        </tr>
-        <tr>
-          <td>PERT chart</td>
-          <td>Tasks</td>
-          <td>"Must be done before"</td>
-        </tr>
-        <tr>
-          <td>Organisational chart</td>
-          <td>People</td>
-          <td>"Reports to"</td>
-        </tr>
-      </tbody>
-    </table>
+      <table cellspacing="0" cellpadding="5">
+        <tbody>
+          <tr>
+            <th>Diagram</th>
+            <th>Nodes are</th>
+            <th>Arrows mean</th>
+          </tr>
+          <tr>
+            <td>Family tree</td>
+            <td>People</td>
+            <td>"Is parent of"</td>
+          </tr>
+          <tr>
+            <td>Dataflow diagram</td>
+            <td>Software modules"</td>
+            <td>Passes data to"</td>
+          </tr>
+          <tr>
+            <td>Dependency</td>
+            <td>Module</td>
+            <td>"Depends on"</td>
+          </tr>
+          <tr>
+            <td>PERT chart</td>
+            <td>Tasks</td>
+            <td>"Must be done before"</td>
+          </tr>
+          <tr>
+            <td>Organisational chart</td>
+            <td>People</td>
+            <td>"Reports to"</td>
+          </tr>
+        </tbody>
+      </table>
 
-    <p>The system must allow any sort of information to be entered. Another person
-      must be able to find the information, sometimes without knowing what he is
-      looking for.</p>
+      <p>The system must allow any sort of information to be entered. Another person
+        must be able to find the information, sometimes without knowing what he is
+        looking for.</p>
+    </div>
 
-    <p>In practice, it is useful for the system to be aware of the generic types
+    <p id="edit8">In practice, it is useful for the system to be aware of the generic types
       of the links between items (dependences, for example), and the types of nodes
       (people, things, documents..) without imposing any limitations.</p>
 
     <h2 id="trees">The Problem with Trees</h2>
+    <div id="edit9">
+      <p>Many systems are organised hierarchically. The CERNDOC documentation system
+        is an example, as is the Unix file system, and the VMS/HELP system. A tree has
+        the practical advantage of giving every node a unique name. However, it does
+        not allow the system to model the real world. For example, in a hierarchical
+        HELP system such as VMS/HELP, one often gets to a leaf on a tree such as</p>
+      <pre>HELP COMPILER SOURCE_FORMAT PRAGMAS DEFAULTS</pre>
 
-    <p>Many systems are organised hierarchically. The CERNDOC documentation system
-      is an example, as is the Unix file system, and the VMS/HELP system. A tree has
-      the practical advantage of giving every node a unique name. However, it does
-      not allow the system to model the real world. For example, in a hierarchical
-      HELP system such as VMS/HELP, one often gets to a leaf on a tree such as</p>
-    <pre>HELP COMPILER SOURCE_FORMAT PRAGMAS DEFAULTS</pre>
+      <p>only to find a reference to another leaf: "Please see</p>
+      <pre>HELP COMPILER COMMAND OPTIONS DEFAULTS PRAGMAS"</pre>
 
-    <p>only to find a reference to another leaf: "Please see</p>
-    <pre>HELP COMPILER COMMAND OPTIONS DEFAULTS PRAGMAS"</pre>
+      <p>and it is necessary to leave the system and re-enter it. What was needed
+        was a link from one node to another, because in this case the information was
+        not naturally organised into a tree.</p>
 
-    <p>and it is necessary to leave the system and re-enter it. What was needed
-      was a link from one node to another, because in this case the information was
-      not naturally organised into a tree.</p>
+      <p>Another example of a tree-structured system is the uucp News system (try
+        'rn' under Unix). This is a hierarchical system of discussions ("newsgroups")
+        each containing articles contributed by many people. It is a very useful
+        method of pooling expertise, but suffers from the inflexibility of a tree.
+        Typically, a discussion under one newsgroup will develop into a different
+        topic, at which point it ought to be in a different part of the tree. (See Fig
+        1).</p>
+    </div>
 
-    <p>Another example of a tree-structured system is the uucp News system (try
-      'rn' under Unix). This is a hierarchical system of discussions ("newsgroups")
-      each containing articles contributed by many people. It is a very useful
-      method of pooling expertise, but suffers from the inflexibility of a tree.
-      Typically, a discussion under one newsgroup will develop into a different
-      topic, at which point it ought to be in a different part of the tree. (See Fig
-      1).</p>
-
-
+    <div id="edit10">
 
     <figure>
 
@@ -269,25 +292,28 @@ Scott P. Duncan (duncan@ctt.bellcore.com OR ...!bellcore!ctt!duncan)
         tree structure of the scheme: this discussion is related to several areas.
         Note that the "References", "From" and "Subject" fields can all be used to
         generate links.</i></p>
+      </div>
 
     <h2 id="keyWords">The Problem with Keywords</h2>
 
-    <p>Keywords are a common method of accessing data for which one does not have
+    <p id="edit11">Keywords are a common method of accessing data for which one does not have
       the exact coordinates. The usual problem with keywords, however, is that two
       people never chose the same keywords. The keywords then become useful only to
       people who already know the application well.</p>
 
-    <p>Practical keyword systems (such as that of VAX/NOTES for example) require
+    <p id="edit12">Practical keyword systems (such as that of VAX/NOTES for example) require
       keywords to be registered. This is already a step in the right direction. A
       linked system takes this to the next logical step. Keywords can be nodes which
       stand for a concept. A keyword node is then no different from any other node.
       One can link documents, etc., to keywords. One can then find keywords by
-      finding any node to which they are related. In this way, documents on similar
+      finding any node to which they are related.</p>
+
+    <p id="edit13">
+      In this way, documents on similar
       topics are indirectly linked, through their key concepts. A keyword search
       then becomes a search starting from a small number of named nodes, and finding
-      nodes which are close to all of them.</p>
-
-    <p>It was for these reasons that I first made a small linked information
+      nodes which are close to all of them.
+      It was for these reasons that I first made a small linked information
       system, not realising that a term had already been coined for the idea:
       "hypertext".</p>
 
