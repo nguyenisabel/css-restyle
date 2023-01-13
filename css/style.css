@@ -12,10 +12,14 @@ body {
 
 header {
   text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, auto);
 }
 
 h1 {
   font-family: 'Abril Fatface', cursive;
+  grid-column: 1 / -1;
 }
 
 h2 {
@@ -23,6 +27,7 @@ h2 {
 }
 
 address {
+  grid-column: 1 / -1;
   border-top: 4.5px double black;
   border-bottom: 4.5px double black;
   font-family: 'Fjalla One', sans-serif;
@@ -30,49 +35,80 @@ address {
   padding: 10px;
 }
 
-.wrapper {
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
+.wrapper{
+  display: flex;
+  justify-content: center;
+  align-content: center;
 }
-
 .wrapper p {
-  float: left;
-  width: 70%;
-  padding: 5px;
+  flex: 5;
+  padding: 10px;
   font-style: italic;
+  line-height: 200%;
 }
-
-.wrapper figure {
-  float: left;
-  width: 70%;
+.wrapper figure{
+  padding: 25px;
   margin: 0;
 }
 
 nav {
+  flex: 5;
   padding: 10px;
+  margin: 10px;
+  border-right: 1.5px solid black;
 }
-
 nav ul {
+  text-align: left;
   list-style-type: none;
 }
-
 nav li {
   padding: 5px;
 }
-
 nav a {
   text-decoration: none;
   color: black;
 }
+nav a:hover{
+  color: black;
+  background-color: #b3b2b2;
+  transition: 0.2s;
+}
 
+article{
+  display: grid;
+  grid-template-rows: auto repeat(autofill);
+  grid-template-columns: 25% 25% 25% 25%;
+  border-top: 1.5px solid black;
+}
+#overview{
+  grid-row: 1 / 4;
+  grid-column: 1 / 4;
+  text-align: center;
+}
+#edit1{
+  grid-row: 2 / 4;
+  grid-column: 1 / 4;
+}
+#losingInfo{
+  grid-row: 3 / 4;
+  border-top: 1.5px solid black;
+  padding-top: 20px;
+}
+#edit2{
+  grid-row: 4 / 4;
+  grid-column: 1 / 3;
+}
+#edit3{
+  grid-row: 4 / 4;
+  grid-column: 4 / 4;
+}
 
 img {
   width: 512px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  /* border: 4px solid #d9eadd; */
+  border: 1.5px solid black;
 }
 
 
