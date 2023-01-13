@@ -1,84 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Fjalla+One&family=News+Cycle:wght@400;700&display=swap');
 
-*{
+* {
   box-sizing: border-box;
 }
+
 body {
-background-color: #ebe8e7;   
-color:#302005;
-font-family: 'News Cycle', sans-serif;
+  background-color: #ebe8e7;
+  color: #302005;
+  font-family: 'News Cycle', sans-serif;
 }
 
-header{
+header {
   text-align: center;
-  border: 1.5px solid black;
 }
 
-h1{
-  font-family: 'Abril Fatface', cursive;
-}
-h2{
+h1 {
   font-family: 'Abril Fatface', cursive;
 }
 
-address{
-  padding: 10px;
-  float: left;
+h2 {
+  font-family: 'Abril Fatface', cursive;
+}
+
+address {
+  border-top: 4.5px double black;
+  border-bottom: 4.5px double black;
   font-family: 'Fjalla One', sans-serif;
   font-style: normal;
-}
-
-header p{
-  text-align: left;
-  border: 1.5px solid black;
   padding: 10px;
-  margin-left: 175px;
 }
 
-nav{
-  /* font-family: 'Fjalla One', sans-serif; */
+.wrapper {
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
 }
-nav ul{
+
+.wrapper p {
+  float: left;
+  width: 70%;
+  padding: 5px;
+  font-style: italic;
+}
+
+.wrapper figure {
+  float: left;
+  width: 70%;
+  margin: 0;
+}
+
+nav {
+  padding: 10px;
+}
+
+nav ul {
   list-style-type: none;
 }
-nav li{
-  display: inline;
+
+nav li {
   padding: 5px;
-  border: 1.5px solid black;
 }
-nav a{
+
+nav a {
   text-decoration: none;
   color: black;
 }
 
 
 img {
-width: 512px;
-display: block;
-margin-left: auto;
-margin-right: auto;
-/* border: 4px solid #d9eadd; */
+  width: 512px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* border: 4px solid #d9eadd; */
 }
 
 
 table {
-border:0.5px solid black;
-background-color: #d9eadd;
-margin-left: auto;
-margin-right: auto;
+  border: 0.5px solid black;
+  background-color: #d9eadd;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-th, td {
-border:0.5px solid black;
+th,
+td {
+  border: 0.5px solid black;
 }
 
 
 figcaption {
-    font-style: italic;
-    padding: 2px;
-    text-align: center;
-  }
+  font-style: italic;
+  padding: 2px;
+  text-align: center;
+}
 
-.clearfix{
+.top {
+  font-style: normal;
+  text-decoration: none;
+  background-color: #ebe8e7;
+  cursor: pointer;
+  font-weight: 500;
+  color: black;
+  border: 1px solid black;
+  padding: 5px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+}
+
+.top:hover {
+  background-color: #ebe8e7;
+  color: black;
+  border: 4px double black;
+  transition: 0.3s;
+}
+
+.clearfix {
   clear: both;
 }
